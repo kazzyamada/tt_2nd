@@ -53,9 +53,15 @@ $ git commit -m "first commit"
 
 $ git remote add origin https://github.com/kazzyamada/tt_2nd.git
 
+# ここでgithub.comのサイトで、tt_2ndの名前のリポジトリを作成する
+
 $ git push -u origin master
-remote: Repository not found.
-fatal: repository 'https://github.com/kazzyamada/tt_2nd.git/' not found
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 216 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kazzyamada/tt1st.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
 
 
 
@@ -75,5 +81,12 @@ fatal: repository 'https://github.com/kazzyamada/tt_2nd.git/' not found
 $ git remote -v
 origin	https://github.com/kazzyamada/tt_2nd.git (fetch)
 origin	https://github.com/kazzyamada/tt_2nd.git (push)
+
+# trouble check
+https://help.github.com/articles/error-repository-not-found/
+
+# for SSH check
+$ ssh -T git@github.com
+Hi kazzyamada! You've successfully authenticated, but GitHub does not provide shell access.
 
 
